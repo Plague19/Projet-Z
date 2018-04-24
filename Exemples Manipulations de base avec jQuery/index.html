@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Manipulations de base avec jQuery</title>
+	<style>
+		body{font-family:verdana}
+		.clear{clear:both;}
+		#content{width:450px;border:1px solid black;margin:0 35%;padding:10px;}
+		.consignes{border:1px solid black;text-align:center;margin:10px;background:#bdbdbd}
+		li{font-size:12px;}
+		p{font-size:12px}
+		span{font-size:10px;}		
+		.effet{width:70px;height:70px;border:1px solid #000000;display:none;float:left;margin-right:20px;text-align:center;font-size:10px;}
+		#slidedown{background-color:red;}
+		#show{background-color:green;}
+		#slidetoggle{background-color:yellow;}
+		#animate{background-color:blue;}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Appel de la bibliothèque jQuery -->
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="content">
+		<form id="formulaire">
+			<div>
+				<p>Liste de quelques villes françaises :</p>
+				<ul id="liste">
+					<li class="villes">Paris</li>
+					<li class="villes">Marseille</li>
+					<li class="villes">Lyon</li>
+					<li class="villes">Strasbourg</li>
+					<li class="villes">Bordeaux</li>
+					<li class="villes">Toulouse</li>
+				</ul>
+				<input type="button" id="nombreVilles" value="1 - Afficher le nombre de villes de la liste"/><br /><br />
+				<input type="button" id="apparenceBalisesP" value="2 - Changer l'apparence des balises <p></p>"/><br /><br />
+				<input type="button" id="derniereVilleGras" value="3 - Mettre le nom de la dernière ville en gras"/><br /><br />
+				<input type="button" id="supprimerTroisiemeVille" value="4 - Supprimer la troisième ville de la liste"/><br /><br />
+				<input type="button" id="ajouterVille" value="5 - Ajouter cette ville à la liste"/><input id="ajout" type="text"/><br /><br />
+				<input type="button" id="effetsGraphiques" value="6 - Exemples effets graphiques avec jQuery"/><br /><br />			
+			</div>
+			<div id="affichageNombreVilles"></div>
+			<div id="zone_a_effets">
+				<div class="effet" id="slidedown">Effet slideDown</div>
+				<div class="effet" id="show">Effet show</div>
+				<div class="effet" id="slidetoggle">Effet slidetoggle</div>
+				<div class="effet" id="animate">Effet animate</div>
+				<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+</body>
